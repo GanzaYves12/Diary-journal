@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Daily Journal</h1>
+      <div class="controls">
+        <input type="date" id="datePicker" aria-label="Select date" />
+        <button id="clearAllBtn" title="Clear all entries">Clear All</button>
+        <button id="themeToggleBtn" title="Toggle light/dark theme">Toggle Theme</button>
+      </div>
+    </header>
+    <main>
+      <section class="entry-editor">
+        <textarea id="entryText" placeholder="Write your journal entry here..."></textarea>
+        <button id="saveBtn">Save</button>
+      </section>
+      <section class="entry-list">
+        <h2>Past Entries</h2>
+        <ul id="entriesList" aria-label="List of past journal entries"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
